@@ -296,38 +296,77 @@
     </div>
     <!---------- Message option------------->
     <div class="container-fluid">
-      <div class="row mt-5">
-        <div class="col-lg-6 p-2">
-          <div class="bg">
+      <div class="row mt-5 justify-content-center">
+        <div class="col-lg-6 p-4">
+          <div class="bg-dark rounded p-4 shadow">
             <form>
-              <h2 class="text-light">তোমার মতামত/সমস্যা/সাপোর্ট</h2>
+              <h2 class="text-light text-center mb-4">
+                তোমার মতামত/সমস্যা/সাপোর্ট
+              </h2>
               <div class="form-group pt-3">
                 <input
-                  type="name"
+                  type="text"
                   class="form-control"
-                  placeholder="তোমার নাম "
+                  placeholder="তোমার নাম"
+                  required
+                  style="
+                    border-radius: 8px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                  "
                 />
               </div>
               <div class="form-group pt-3">
-                <input type="email" class="form-control" placeholder="ইমেল " />
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="ইমেল"
+                  required
+                  style="
+                    border-radius: 8px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                  "
+                />
               </div>
               <div class="form-group pt-3">
                 <input
-                  type="number"
+                  type="tel"
                   class="form-control"
-                  placeholder="মোবাইল "
+                  placeholder="মোবাইল"
+                  required
+                  style="
+                    border-radius: 8px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                  "
                 />
               </div>
               <div class="form-group pt-3">
                 <textarea
-                  type="massage"
                   class="form-control"
-                  placeholder="তোমার মেসেজ "
-                  rows="3"
+                  placeholder="তোমার মেসেজ"
+                  rows="4"
+                  required
+                  style="
+                    border-radius: 8px;
+                    padding: 10px;
+                    border: 1px solid #ccc;
+                  "
                 ></textarea>
               </div>
-              <div class="pt-3">
-                <button type="submit" class="btn btn-primary form-control">
+              <div class="pt-4">
+                <button
+                  type="submit"
+                  class="btn btn-primary form-control"
+                  style="
+                    border-radius: 8px;
+                    padding: 12px;
+                    background-color: #007bff;
+                    border: none;
+                    transition: background-color 0.3s ease;
+                  "
+                >
                   সাবমিট
                 </button>
               </div>
@@ -336,6 +375,17 @@
         </div>
       </div>
     </div>
+
+    <style>
+      .form-control:focus {
+        box-shadow: 0 0 8px rgba(0, 123, 255, 0.5);
+        border-color: #007bff;
+      }
+
+      .btn:hover {
+        background-color: #0056b3;
+      }
+    </style>
 
     <script src="./js/bootstrap.bundle.js"></script>
   </body>
